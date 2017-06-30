@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="BMI Calculator">
+        <meta name="author" content="BMI">
+
+        <title>BMI Calculator</title>
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+
+        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+        <!-- <script src="assets/js/modernizr.min.js"></script> -->
+    </head>
+    <style type="text/css">
+      .calculator-wrapper{
+        width: 50%;
+        margin: auto;
+      }
+      input[type="text"]{
+        border-radius: 0;
+      }
+      #topnav .topbar-main .container {
+      width: 90%;
+      height: 45px;
+     }
+      #topnav .topbar-main .logo {
+      color: #ffffff !important;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: .05em;
+      margin-top: 5px;
+      text-transform: uppercase;
+      float: left;
+    }
+    </style>
+
+    <body>
+
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container">
+                    <!-- Logo container-->
+                    <div class="logo">
+                        <a href="#" class="logo">LOGO HERE</a>
+                    </div>
+                    <!-- End Logo container-->
+                </div>
+            </div>
+            <!-- End topbar -->
+        </header>
+        <!-- End Navigation Bar-->
+
+        <div class="wrapper">
+            <div class="container">
+              <div class="calculator-wrapper">
+                <div class="row">
+                  <div class="col-sm-8 col-lg-12 col-md-4">
+                      <div class="panel panel-default panel-border">
+                          <div class="panel-heading">
+                              <h3 class="panel-title">BMI Calculator</h3>
+                          </div>
+                          <div class="panel-body">
+                            <div class="radio radio-custom">
+                              <input type="radio" name="radio" id="imp" value="option2" checked>
+                                <label for="radio2" style="margin-right: 100px;">
+                                  IMPERIAL
+                                </label>
+                              <input type="radio" name="radio" id="met" value="option1" >
+                                <label for="radio1">
+                                  METRIC
+                                </label>
+                            </div>
+
+                            <div class="row imp-fields">
+                              <div class="col-sm-8 col-lg-12 col-md-4">
+                                <div class="input-group m-t-10">
+                                  
+                                  <input type="text" id="example-input2-group2" name="example-input2-group2" class="form-control ft" style="padding-right: 0;">
+                                  <span class="input-group-btn" >
+                                  <button type="button" class="btn btn-primary" style="margin-right: 5px;    border-top-left-radius: 0;border-bottom-left-radius: 0;">ft.</button>
+                                  </span>
+
+                                  <input type="text" id="example-input2-group2" name="example-input2-group2" class="form-control inc">
+                                  <span class="input-group-btn">
+                                  <button type="button" class="btn btn-primary">in.</button>
+                                  </span>
+
+                                </div>
+                                <div class="input-group m-t-10">
+                                  <input type="text" id="example-input2-group2" name="example-input2-group2" class="form-control lbs">
+                                  <span class="input-group-btn">
+                                  <button type="button" class="btn btn-primary ">lbs.</button>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- IMPRIAL -->
+
+                             <div class="row met-fields">
+                              <div class="col-sm-8 col-lg-6 col-md-4">
+                                <div class="input-group m-t-10">
+                                    <input type="text" id="example-input2-group2" name="example-input2-group2" class="form-control met">
+                                    <span class="input-group-btn">
+                                    <button type="button" class="btn waves-effect waves-light btn-primary">m.</button>
+                                    </span>
+
+                                </div>
+                                <div class="input-group m-t-10">
+                                  <input type="text" id="example-input2-group2" name="example-input2-group2" class="form-control kg">
+                                  <span class="input-group-btn">
+                                  <button type="button" class="btn waves-effect waves-light btn-primary">kg.</button>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- IMPRIAL -->
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="row">
+                 <div class="col-sm-8 col-lg-12 col-md-4">
+                    <div class="mini-stat clearfix card-box">
+                        <div class="mini-stat-info text-center text-dark">
+                            <span class="counter text-dark result">0</span>
+                            YOUR RESULT
+                        </div>
+                        <div class="tiles-progress">
+                            <div class="m-t-20">
+                                <!-- <h5 class="text-uppercase">Target <span class="pull-right">60%</span></h5> -->
+                                <div class="progress progress-sm m-0">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;background: #5fbeaa;">
+                                        <!-- <span class="sr-only">60% Complete</span> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- end container -->
+        </div>
+        <!-- End wrapper -->
+
+
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $('.met-fields').hide();
+
+            $(document).on('keyup','.ft,.inc,.lbs',function(){
+              var ft = ($('.ft').val()) * 12;
+              var inc = $('.inc').val();
+              var lbs = $('.lbs').val();
+              height = parseInt(ft) + parseInt(inc);
+              var BMI = (parseInt(lbs) / (height * height)) * 703;
+              if(isFinite(BMI)){
+                $('.result').html(BMI.toFixed(2));
+              } else {
+                $('.result').html('');
+              }
+            });
+
+            $(document).on('keyup','.kg,.met',function(){
+              var kg = $('.kg').val();
+              var met = $('.met').val();
+              height = parseInt(met) * parseInt(met);
+              var BMI = (parseInt(kg) / height);
+              if(isFinite(BMI)){
+                $('.result').html(BMI.toFixed(2));
+              } else {
+                $('.result').html('');
+              }
+            });
+
+            $(document).on('click','#imp',function(){
+              $('.met-fields').hide();
+              $('.imp-fields').show();
+            });
+
+            $(document).on('click','#met',function(){
+              $('.imp-fields').hide();
+              $('.met-fields').show()
+              $('.result').html(0);
+            });
+
+
+          $(".kg,.met,.ft,.inc,.lbs").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+             // Allow: Ctrl+A, Command+A
+            (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) || 
+             // Allow: home, end, left, right, down, up
+            (e.keyCode >= 35 && e.keyCode <= 40)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+          });
+        </script>
+    </body>
+
+<!-- Mirrored from coderthemes.com/ubold_1.6/menu_2/page-starter.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jul 2016 11:57:21 GMT -->
+</html>
